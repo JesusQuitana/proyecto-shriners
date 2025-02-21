@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FooterComponent } from "../footer/footer.component";
 import Swal from 'sweetalert2';
@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
   styleUrl: './eventos.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class EventosComponent {
+export class EventosComponent{
   private router = inject(Router);
 
   navigate(url: string) : void
