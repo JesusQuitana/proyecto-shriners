@@ -11,7 +11,7 @@ export const routes: Routes = [
   {path: 'shriners', component: LandingComponent},
   {path: 'shriners/eventos', component: EventosComponent},
   {path: 'shriners/blog', component: BlogComponent},
-  {path: 'shriners/blog/entrada/:id', component: EntradaComponent},
+  {path: 'shriners/blog/entrada/1', component: EntradaComponent},
   {path: 'shriners/D2zGKvxU', component: LogComponent},
   {path: '**', component: NotFoundComponent}
 ];
