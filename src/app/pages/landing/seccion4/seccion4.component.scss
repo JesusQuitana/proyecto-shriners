@@ -4,6 +4,9 @@
 .shriners--4 {
   .carrusel {
     height: 70rem;
+    @include v.telf() {
+      height: 40rem;
+    }
     .fondo {
       position: absolute;
       inset: 0;
@@ -11,6 +14,7 @@
     }
     img {
       width: 100%;
+      height: 100%;
     }
   }
 }

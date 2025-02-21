@@ -3,4 +3,7 @@
 .map {
   width: 60rem;
   height: 60rem;
+  @include v.telf() {
+    width: 100%;
+  }
 }

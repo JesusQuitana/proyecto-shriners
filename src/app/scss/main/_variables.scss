@@ -16,3 +16,18 @@ $tipografia: "Merriweather", serif;
   font: var(--fa-font-solid);
   content: $icon;
 }
+@mixin telf() {
+  @media (max-width: 480px) {
+      @content;
+  }
+}
+@mixin tablet() {
+  @media (min-width: 481px) and (max-width: 800px) {
+      @content;
+  }
+}
+@mixin desktop() {
+  @media (min-width: 801px) {
+      @content;
+  }
+}

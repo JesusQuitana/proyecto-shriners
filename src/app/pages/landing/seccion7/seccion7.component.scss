@@ -30,6 +30,9 @@
         color: v.$blanco;
         text-align: center;
         line-height: 1.5;
+        @include v.telf() {
+          width: 100%;
+        }
       }
       a {
         width: 50%;

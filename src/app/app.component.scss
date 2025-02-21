@@ -30,6 +30,9 @@ ul {
 .contenedor {
   max-width: 160rem;
   margin: 0 auto;
+  @include v.telf() {
+    width: 100%;
+  }
 }
 .btn {
   display: inline-block;

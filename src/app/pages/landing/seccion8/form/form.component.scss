@@ -7,6 +7,9 @@
   width: 80%;
   margin: 0 auto;
   gap: 1.5rem;
+  @include v.telf() {
+    width: 95%;
+  }
   h2 {
     color: v.$primario;
     border-bottom: 2px solid v.$primario;

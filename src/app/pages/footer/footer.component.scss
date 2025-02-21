@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem 10rem;
+  @include v.telf() {
+    flex-direction: column;
+    gap: 1rem;
+  }
   picture {
     display: flex;
     flex-direction: column;
@@ -14,6 +18,13 @@
     }
     label {
       text-align: center;
+    }
+  }
+
+  .partnerts {
+    width: 18%;
+    @include v.telf() {
+      width: 100%;
     }
   }
 

@@ -31,6 +31,9 @@
       a {
         width: 50%;
         margin: 0 auto;
+        @include v.telf() {
+          width: 80%;
+        }
       }
     }
   }

@@ -5,6 +5,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0rem 5rem;
+  @include v.telf() {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 0rem;
+  }
   picture {
     img {
       width: 10rem;

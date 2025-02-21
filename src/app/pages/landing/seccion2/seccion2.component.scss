@@ -6,6 +6,9 @@
   margin-bottom: 0;
   position: relative;
   height: 20rem;
+  @include v.telf() {
+    height: 15rem;
+  }
   article {
     display: flex;
     justify-content: flex-end;
@@ -58,6 +61,18 @@
     :nth-child(5) {
       width: 60%;
       height: 3px;
+    }
+  }
+}
+// Telefono
+@include v.telf() {
+  .shriners--2 {
+    margin-top: 0rem;
+    article {
+      display: none;
+    }
+    picture {
+      width: 100%;
     }
   }
 }

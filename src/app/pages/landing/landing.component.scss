@@ -8,5 +8,10 @@
     display: grid;
     grid-template-columns: 40% 60%;
     place-items: center;
+    @include v.telf() {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
   }
 }
