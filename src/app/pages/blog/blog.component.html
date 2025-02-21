@@ -1,0 +1,88 @@
+<!-- Header -->
+<nav class="header contenedor">
+  <picture (click)="this.navigate('')">
+    <img src="assets/logo.png" alt="logo">
+  </picture>
+
+  <ul class="navegacion">
+    <li (click)="this.navigate('eventos')">Eventos</li>
+    <li (click)="this.navigate('')">Contactos</li>
+    <form>
+      <input type="text" name="search" id="search" placeholder="Buscar...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </ul>
+</nav>
+
+<p class="title">Un espacio donde descubrir contenidos relacionados con <strong>Shriners</strong> y temas relacionados con el grupo asociado y la labor que brindamos.</p>
+<section class="articulos">
+
+  <article class="articulos__entrada">
+    <picture>
+      <source srcset="assets/webp/testimonio2.webp" type="image/webp">
+      <img loading="lazy" src="assets/testimonio2.jpg" alt="blog">
+    </picture>
+    <div class="articulos__entrada--info">
+      <h2>Titulo de la Entrada</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam commodi vero reprehenderit inventore, debitis quae magni voluptatem voluptatum, laborum, amet aspernatur. Exercitationem adipisci facere qui, magnam quaerat fugit consequuntur?</p>
+      <div><a (click)="this.navigate('blog/entrada/'+1)" class="leerMas">Leer Más &#187;</a></div>
+    </div>
+  </article>
+  <article class="articulos__entrada">
+    <picture>
+      <source srcset="assets/webp/grupo_fem.webp" type="image/webp">
+      <img loading="lazy" src="assets/grupo_fem.jpg" alt="blog">
+    </picture>
+    <div class="articulos__entrada--info">
+      <h2>Titulo de la Entrada</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam commodi vero reprehenderit inventore, debitis quae magni voluptatem voluptatum, laborum, amet aspernatur. Exercitationem adipisci facere qui, magnam quaerat fugit consequuntur?</p>
+      <div><a (click)="this.navigate('blog/entrada/'+1)" class="leerMas">Leer Más &#187;</a></div>
+    </div>
+  </article>
+  <article class="articulos__entrada">
+    <picture>
+      <source srcset="assets/webp/president_torn.webp" type="image/webp">
+      <img loading="lazy" src="assets/president_torn.jpg" alt="blog">
+    </picture>
+    <div class="articulos__entrada--info">
+      <h2>Titulo de la Entrada</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam commodi vero reprehenderit inventore, debitis quae magni voluptatem voluptatum, laborum, amet aspernatur. Exercitationem adipisci facere qui, magnam quaerat fugit consequuntur?</p>
+      <div><a (click)="this.navigate('blog/entrada/'+1)" class="leerMas">Leer Más &#187;</a></div>
+    </div>
+  </article>
+  <article class="articulos__entrada">
+    <picture>
+      <source srcset="assets/webp/reunion.webp" type="image/webp">
+      <img loading="lazy" src="assets/reunion.jpg" alt="blog">
+    </picture>
+    <div class="articulos__entrada--info">
+      <h2>Titulo de la Entrada</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam commodi vero reprehenderit inventore, debitis quae magni voluptatem voluptatum, laborum, amet aspernatur. Exercitationem adipisci facere qui, magnam quaerat fugit consequuntur?</p>
+      <div><a (click)="this.navigate('blog/entrada/'+1)" class="leerMas">Leer Más &#187;</a></div>
+    </div>
+  </article>
+  <article class="articulos__entrada">
+    <picture>
+      <source srcset="assets/webp/grupo4.webp" type="image/webp">
+      <img loading="lazy" src="assets/webp/grupo4.webpg" alt="blog">
+    </picture>
+    <div class="articulos__entrada--info">
+      <h2>Titulo de la Entrada</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam commodi vero reprehenderit inventore, debitis quae magni voluptatem voluptatum, laborum, amet aspernatur. Exercitationem adipisci facere qui, magnam quaerat fugit consequuntur?</p>
+      <div><a (click)="this.navigate('blog/entrada/'+1)" class="leerMas">Leer Más &#187;</a></div>
+    </div>
+  </article>
+  <article class="articulos__entrada">
+    <picture>
+      <img loading="lazy" src="assets/webp/torn.webp" alt="blog">
+    </picture>
+    <div class="articulos__entrada--info">
+      <h2>Titulo de la Entrada</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam commodi vero reprehenderit inventore, debitis quae magni voluptatem voluptatum, laborum, amet aspernatur. Exercitationem adipisci facere qui, magnam quaerat fugit consequuntur?</p>
+      <div><a (click)="this.navigate('blog/entrada/'+1)" class="leerMas">Leer Más &#187;</a></div>
+    </div>
+  </article>
+</section>
+
+<!-- Footer -->
+<app-footer></app-footer>

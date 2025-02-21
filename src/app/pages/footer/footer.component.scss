@@ -1,0 +1,40 @@
+@use '../../scss/main/variables' as v;
+.footer {
+  background-color: #adadad;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 10rem;
+    }
+    label {
+      text-align: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-weight: 700;
+      border-bottom: 1px solid v.$primario;
+      padding: .5rem 1.5rem;
+    }
+  }
+  &__redes {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    i {
+      font-size: 2rem;
+    }
+  }
+}

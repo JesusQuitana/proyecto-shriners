@@ -1,0 +1,55 @@
+<!-- Header -->
+<nav class="header contenedor">
+  <picture (click)="this.navigate('')">
+    <img src="assets/logo.png" alt="logo">
+  </picture>
+
+  <ul class="navegacion">
+    <li (click)="this.navigate('blog')">Blog</li>
+    <li (click)="this.navigate('')">Contactos</li>
+    <form>
+      <input type="text" name="search" id="search" placeholder="Buscar...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </ul>
+</nav>
+
+<p class="title">Un espacio donde descubrir contenidos relacionados con Shriners y temas relacionados con el grupo asociado y los eventos que puedes participar</p>
+<swiper-container loop="true" autoplay="true" cssmode="true" speed="600">
+  <swiper-slide>
+    <section class="eventos">
+        <article class="eventos__evento" (click)="this.evento('Evento de Golf','Contacto Personalizado')">
+          <picture>
+            <source srcset="assets/webp/torneo_golf.webp" type="image/webp">
+            <img loading="lazy" src="assets/torneo_golf.jpg" alt="torneo_golf">
+          </picture>
+        </article>
+        <article class="eventos__evento" (click)="this.evento('Evento de Bowling','Contacto Personalizado')">
+          <picture>
+            <source srcset="assets/webp/torneo_bowling.webp" type="image/webp">
+            <img loading="lazy" src="assets/torneo_bowling.jpg" alt="torneo_golf">
+          </picture>
+        </article>
+    </section>
+  </swiper-slide>
+  <swiper-slide>
+    <section class="eventos">
+      <article class="eventos__evento" (click)="this.evento('Evento de Golf','Contacto Personalizado')">
+        <picture>
+          <source srcset="assets/webp/torneo_golf.webp" type="image/webp">
+          <img loading="lazy" src="assets/torneo_golf.jpg" alt="torneo_golf">
+        </picture>
+      </article>
+      <article class="eventos__evento" (click)="this.evento('Evento de Bowling','Contacto Personalizado')">
+        <picture>
+          <source srcset="assets/webp/torneo_bowling.webp" type="image/webp">
+          <img loading="lazy" src="assets/torneo_bowling.jpg" alt="torneo_golf">
+        </picture>
+      </article>
+    </section>
+  </swiper-slide>
+</swiper-container>
+
+<!-- Footer -->
+<app-footer></app-footer>
+

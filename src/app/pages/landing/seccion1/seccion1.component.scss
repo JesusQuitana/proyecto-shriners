@@ -1,0 +1,42 @@
+@use '../../../scss/main/variables' as v;
+@use 'sass:color';
+.shriners--1 {
+  height: 70rem;
+  background-image: -webkit-image-set(url(../../../../../public/assets/webp/grupo_formal.webp) 1x);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  &__info {
+    display: grid;
+    place-items: center;
+    z-index: 999;
+    &--1 {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      h2 {
+        font-size: 5rem;
+        color: v.$blanco;
+        text-align: center;
+      }
+      p {
+        font-size: 2rem;
+        color: v.$blanco;
+        text-align: center;
+      }
+      a {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .fondo {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(v.$negro, 60%);
+  }
+}

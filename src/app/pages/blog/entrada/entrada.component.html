@@ -1,0 +1,32 @@
+<!-- Header -->
+<nav class="header contenedor">
+  <picture (click)="this.navigate('')">
+    <img src="assets/logo.png" alt="logo">
+  </picture>
+
+  <ul class="navegacion">
+    <li (click)="this.navigate('blog')">Blog</li>
+    <li (click)="this.navigate('')">Contactos</li>
+    <form>
+      <input type="text" name="search" id="search" placeholder="Buscar...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </ul>
+</nav>
+
+<section class="entrada">
+  <picture>
+      <source srcset="assets/reunion.webp" type="img/webp">
+      <img loading="lazy" src="assets/reunion.jpg" alt="familia">
+  </picture>
+  <div class="entrada__info">
+    <h2 class="title">Titulo del Blog</h2>
+    <p class="fecha">Fecha: <span>20/05/2025</span></p>
+    <p class="autor">Autor: <span>Cedhot Arias</span></p>
+    <p class="texto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat consequatur id voluptatum dicta necessitatibus, maiores nobis error quam blanditiis tempora perspiciatis nisi a eligendi voluptates iste reprehenderit mollitia ipsa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus adipisci alias est ipsam repellendus ipsa voluptate, hic harum magnam illum commodi nisi voluptas iste ipsum, nihil reprehenderit aliquam sapiente necessitatibus!<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas porro veritatis et error consequatur itaque explicabo veniam aliquid facere. Dolor cum distinctio iusto. Harum quos incidunt debitis, nam ducimus omnis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quidem beatae quis ipsum minus modi, necessitatibus neque, repellat vitae itaque sequi cumque. Ea ullam debitis veniam qui illum veritatis mollitia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae delectus adipisci soluta eveniet praesentium magni et facilis voluptates ea veritatis provident quibusdam consequuntur, magnam nobis at velit quisquam dolorem nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut soluta iste nam aperiam qui dolores, ad quam, ullam sit, sunt molestias totam mollitia repellendus magnam laboriosam earum impedi.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<app-footer></app-footer>
+

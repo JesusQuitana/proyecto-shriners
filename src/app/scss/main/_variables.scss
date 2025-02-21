@@ -1,0 +1,18 @@
+//Colores
+$primario: #710117;
+$secundario: #872E40;
+$gris: #CBCBCB;
+$negro: #232323;
+$blanco: #E1E1E1;
+$amarillo: #D7A304;
+$azul: #2974a5;
+//Tipografia
+$tipografia: "Merriweather", serif;
+// Mixins
+@mixin icons($icon) {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: $icon;
+}

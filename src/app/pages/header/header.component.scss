@@ -1,0 +1,36 @@
+@use '../../scss/main/variables' as v;
+.header {
+  background-color: #adadad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 5rem;
+  picture {
+    img {
+      width: 10rem;
+    }
+  }
+  .navegacion {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    font-weight: 700;
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid v.$negro;
+      padding: .1rem 1rem;
+      width: 15rem;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+    li:hover {
+      color: v.$amarillo;
+      cursor: pointer;
+    }
+  }
+}

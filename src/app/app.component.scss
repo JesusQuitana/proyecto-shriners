@@ -1,0 +1,68 @@
+//Globales
+@use './scss/main/variables' as v;
+@use 'sass:color';
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Merriweather", serif;
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 16px;
+}
+h1, h2, h3, p, a, li, input, select, textarea {
+  margin: 0;
+  font-family: v.$tipografia;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+.contenedor {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  color: v.$blanco;
+  font-weight: 700;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background-color .1s ease-in-out;
+  &.primario {
+    background-color: v.$primario;
+    &:hover {
+      background-color: color.scale(v.$primario, $lightness: -20%);
+    }
+  }
+  &.secundario {
+    background-color: v.$secundario;
+    &:hover {
+      background-color: color.scale(v.$secundario, $lightness: -20%);
+    }
+  }
+  &.amarillo {
+    background-color: v.$amarillo;
+    &:hover {
+      background-color: color.scale(v.$amarillo, $lightness: -20%);
+    }
+  }
+  &.azul {
+    background-color: v.$azul;
+    &:hover {
+      background-color: color.scale(v.$azul, $lightness: -20%);
+    }
+  }
+}

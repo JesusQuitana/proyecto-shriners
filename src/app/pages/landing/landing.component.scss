@@ -1,0 +1,12 @@
+@use '../../scss/main/variables' as v;
+@use 'sass:color';
+
+.shriners {
+  &--8 {
+    margin: 2rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    place-items: center;
+  }
+}

@@ -1,0 +1,45 @@
+@use '../../../scss/main/variables' as v;
+@use 'sass:color';
+// Seccion 7
+.shriners--7 {
+  height: 60rem;
+  background-image: -webkit-image-set(url(../../../../../public/assets/grupo4.jpg) 1x);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  &__info {
+    display: grid;
+    place-items: center;
+    z-index: 999;
+    &--1 {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      h2 {
+        font-size: 5rem;
+        color: v.$blanco;
+        text-align: center;
+      }
+      p {
+        width: 50rem;
+        font-size: 2rem;
+        color: v.$blanco;
+        text-align: center;
+        line-height: 1.5;
+      }
+      a {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .fondo {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(v.$negro, 70%);
+  }
+}

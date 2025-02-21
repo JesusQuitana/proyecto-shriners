@@ -1,0 +1,66 @@
+@use '../../scss/main/variables' as v;
+.header {
+  background-color: #adadad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 5rem;
+  picture {
+    cursor: pointer;
+    img {
+      width: 10rem;
+    }
+  }
+  .navegacion {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    font-weight: 700;
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid v.$negro;
+      padding: .1rem 1rem;
+      width: 15rem;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+    li:hover {
+      color: v.$amarillo;
+      cursor: pointer;
+    }
+  }
+}
+.title {
+  margin: 3rem auto 1rem auto;
+  text-align: center;
+}
+.eventos {
+  max-width: 120rem;
+  margin: 2rem auto 3rem auto;
+  display: grid;
+  place-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+
+  &__evento {
+    place-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    picture {
+      img {
+         width: 32.2rem;
+      }
+    }
+  }
+}

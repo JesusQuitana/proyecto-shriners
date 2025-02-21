@@ -1,0 +1,16 @@
+@use '../../../scss/main/variables' as v;
+@use 'sass:color';
+// Seccion 4
+.shriners--4 {
+  .carrusel {
+    height: 70rem;
+    .fondo {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(v.$negro, 50%);
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

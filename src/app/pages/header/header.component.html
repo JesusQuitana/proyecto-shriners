@@ -1,0 +1,15 @@
+<nav class="header contenedor">
+  <picture>
+    <img src="assets/logo.png" alt="logo">
+  </picture>
+
+  <ul class="navegacion">
+    <li (click)="this.navigate('eventos')">Eventos</li>
+    <li (click)="this.navigate('blog')">Blog</li>
+    <li (click)="this.scroll()">Contactos</li>
+    <form>
+      <input type="text" name="search" id="search" placeholder="Buscar...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </ul>
+</nav>
